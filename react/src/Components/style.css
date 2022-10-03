@@ -1,0 +1,216 @@
+.card_style {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .smalltrash {
+    display: none;
+  }
+  
+  .card_style:hover {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
+  }
+  
+  .iteamsdetails {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
+  }
+  .items_img {
+    flex: 0.4;
+  }
+  .items_img img {
+    width: 20rem;
+    border-radius: 5px;
+  }
+  
+  .details {
+    flex: 0.5;
+  }
+  
+  .rating {
+    background-color: green;
+  }
+  
+  @media (max-width: 772px) {
+    .iteamsdetails {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .smalltrash {
+      display: block;
+    }
+    .largetrash {
+      display: none;
+    }
+    .emptycart_img {
+      margin-right: 50px;
+    }
+    .smallclose {
+      display: none;
+    }
+  
+    /* individual iteams details */
+  
+    .items_img img {
+      width: 16rem;
+    }
+  }
+
+
+ .bs {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  } 
+
+
+  /* .bs1 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  } */
+  
+  .productimg {
+    height: 180px;
+  
+    width: auto;
+  
+    border-radius: 5px;
+  }
+  
+  .content {
+    min-height: 90vh;
+  
+    background-color: azure;
+  }
+  
+  p {
+    margin: 5px !important;
+  
+    text-align: left;
+  
+    color: rgb(3, 3, 3);
+  }
+  
+  .header {
+    padding: 10px;
+  
+    background-color: rgb(2, 2, 2);
+  }
+  
+  .pagination .page-item {
+    margin: 0 3px;
+  }
+  
+  .pagination .page-item .page-link {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    border: none;
+    color: #272727;
+    border: 1px solid transparent;
+  }
+  
+  .pagination .page-item .page-link.previous, .pagination .page-item .page-link.next {
+    border: 1px solid #9B9B9B;
+    color: #656565;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .pagination .page-item .page-link.active, .pagination .page-item .page-link:hover, .pagination .page-item .page-link:focus {
+    border: 1px solid #2892a0;
+    color: #4db2d1;
+    background: #fff;
+  }
+  
+  .pagination .page-item .page-link:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  section {
+      padding: 60px 0;
+  }
+  
+  section .section-title {
+      text-align: center;
+      color: #007b5e;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+  }
+  #footer {
+      background: rgb(11, 113, 113)!important;
+  }
+  #footer h5{
+      padding-left: 10px;
+      border-left: 3px solid #eeeeee;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+      color:#ffffff;
+  }
+  #footer a {
+      color: #ffffff;
+      text-decoration: none !important;
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+  }
+  #footer ul.social li{
+      padding: 3px 0;
+  }
+  #footer ul.social li a i {
+      margin-right: 5px;
+      font-size:25px;
+      -webkit-transition: .5s all ease;
+      -moz-transition: .5s all ease;
+      transition: .5s all ease;
+  }
+  #footer ul.social li:hover a i {
+      font-size:30px;
+      margin-top:-10px;
+  }
+  #footer ul.social li a,
+  #footer ul.quick-links li a{
+      color:#ffffff;
+  }
+  #footer ul.social li a:hover{
+      color:#eeeeee;
+  }
+  #footer ul.quick-links li{
+      padding: 3px 0;
+      -webkit-transition: .5s all ease;
+      -moz-transition: .5s all ease;
+      transition: .5s all ease;
+  }
+  #footer ul.quick-links li:hover{
+      padding: 3px 0;
+      margin-left:5px;
+      font-weight:700;
+  }
+  #footer ul.quick-links li a i{
+      margin-right: 5px;
+  }
+  #footer ul.quick-links li:hover a i {
+      font-weight: 700;
+  }
+  
+  @media (max-width:767px){
+      #footer h5 {
+      padding-left: 0;
+      border-left: transparent;
+      padding-bottom: 0px;
+      margin-bottom: 10px;
+  }
+  }
+  
