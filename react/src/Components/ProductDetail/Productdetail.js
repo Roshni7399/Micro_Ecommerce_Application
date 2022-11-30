@@ -53,6 +53,14 @@ export default function Productdetails() {
   // remove one product
   const remove = (item) => {
     dispatch(REMOVE(item));
+    nav("/");
+    toast.error(
+      "Product Deleted Successfully ",
+      {
+        position: toast.POSITION.TOP_CENTER,
+      },
+      { autoClose: 1000 }
+    );
   };
 
   // Calculating Total Price

@@ -6,7 +6,7 @@ export const cartreducer = (state = INIT_STATE, action) => {
   switch (action.type) {
     case "ADD_CART":
       const ItemIndex = state.carts.findIndex(
-        (Item) => Item.id === action.payload.id
+        (Item) => Item._id === action.payload._id
       );
 
       if (ItemIndex >= 0) {

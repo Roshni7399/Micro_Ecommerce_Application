@@ -30,10 +30,10 @@ const config = {
         },
         PORTNO : 8989,
         EMAIL : {
-            host: "smp.gmail.com",
+            host: "smtp.gmail.com",
             port:  465,
-            username: "roshnimanmode07@gmail.com",
-            password: "wcbcayflwduvxtls",
+            user: "roshnimanmode07@gmail.com",
+            pass: "tffoxotfvzdkbfxq",
         }
     },
 }

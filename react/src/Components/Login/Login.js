@@ -73,9 +73,6 @@ export default function Login() {
             </div>
             <form action="" onSubmit={(e) => handleSubmit(e)} id="Login">
               <div class="form-group">
-                <label for="" class="form-label">
-                  Email Address
-                </label>
                 <input
                   type="email"
                   name="email"
@@ -98,9 +95,17 @@ export default function Login() {
 
               <div class="signup">
                 New User? &nbsp;
-                <strong>
+               <i>
+               <strong>
                   <Link to="/sign-up">SignUP</Link>
                 </strong>
+               </i>
+              </div>
+              <br/>
+              <div id="formFooter">
+                <a class="underlineHover" href="#">
+                  <i><Link to="/forget-password">Forget Password</Link></i>
+                </a>
               </div>
               <button type="submit" class="btn btn-primary">
                 Login

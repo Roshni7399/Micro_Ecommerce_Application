@@ -54,7 +54,43 @@ export const userSignup = async (name, email, password, phone) => {
   // console.log(password)
 };
 
+// Get by Id
 export const getUserDetail = async (_id) => {
   console.log("_id", _id);
   return axios.get(API_URL + `ecom/getuserid?_id=${_id}`, axiosConfig);
 };
+
+
+// Forget Password
+export const forgetpassword = async (email) => {
+  return axios.post(
+    API_URL + "ecom/forgetpassword",
+    {
+      email
+     
+    },
+    axiosConfig
+  );
+  // console.log(email);
+  // console.log(password);
+};
+
+// Reset Password
+// export const setPassword=async(password,confirmPassword,token)=>
+// {    
+//     return await axios.post(API_URL + "ecom/resetpassword",{
+//         password,
+//         confirmPassword,
+//         token}
+//     , axiosConfig)
+// }
+
+
+export const setPassword = async (password,confirmPassword,token) => {
+  // console.log(password,confirmPassword,token);
+  return  await  axios.post(API_URL+`ecom/resetpassword`,
+  {password,confirmPassword,token},
+  
+  axiosConfig)
+}
+
